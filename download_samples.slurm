@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#SBATCH --job-name=download_wgs_snp_samples_test
+#SBATCH --job-name=download_wgs_snp_samples
 #SBATCH --account=
 #SBATCH --partition=standard
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=6
-#SBATCH --time=01:00:00
+#SBATCH --time=02:00:00
 #SBATCH --out=download_wgs_snp_samples_test.out
 #SBATCH --chdir=
 #SBATCH --mail-user=
