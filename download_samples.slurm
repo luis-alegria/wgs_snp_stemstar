@@ -14,9 +14,9 @@
 
 module load sratoolkit/3.1.1
 
-# Download samples in sample_sra_ids.txt from NCBI SRA with sratoolkit
+# Download samples with prefetch, convert to fastq, remove SRA directory and file
 while IFS= read -r sra_id; do
-    echo "Downloading $sra_id"
     prefetch "$sra_id" && \
     fasterq-dump "$sra_id" --split-files --outdir ./wgs_snp_samples
+    rm -rf "$sra_id"
 done < sample_sra_ids.txt
