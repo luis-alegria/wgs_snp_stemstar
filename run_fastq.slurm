@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #SBATCH --job-name=run_fastq
 #SBATCH --account=
 #SBATCH --partition=standard
