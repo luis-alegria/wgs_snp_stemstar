@@ -23,9 +23,10 @@ for fastq_file in ./*_1.fastq; do
         ${fastq_file} ${base}_2.fastq \
         ${base}_1.trim.fastq ${base}_1.trim_un.fastq \
         ${base}_2.trim.fastq ${base}_2.trim_un.fastq \
-        ILLUMINACLIP:"$adapters:2:30:10" \
+        ILLUMINACLIP:"$adapters":2:30:10 \
         SLIDINGWINDOW:4:20 \
-        MINLEN:50
+        MINLEN:50 \
+        AVGQUAL:20
 done
 
 # move trimmed files to a new directory
