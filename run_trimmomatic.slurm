@@ -25,7 +25,7 @@ for fastq_file in ./*_1.fastq; do
         ${base}_2.trim.fastq ${base}_2.trim_un.fastq \
         ILLUMINACLIP:"$adapters":2:30:10 \
         SLIDINGWINDOW:4:20 \
-        MINLEN:50 \
+        MINLEN:75 \
         AVGQUAL:20
 done
 
