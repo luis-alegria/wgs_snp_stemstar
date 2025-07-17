@@ -6,7 +6,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=10
-#SBATCH --time=05:00:00
+#SBATCH --time=02:30:00
 #SBATCH --out=trimmomatic.out
 #SBATCH --chdir=
 #SBATCH --mail-user=
