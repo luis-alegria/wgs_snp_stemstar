@@ -17,7 +17,7 @@ source ~/.bashrc
 module load micromamba
 micromamba activate snippy
 
-./run_snippy_for_core_snps.sh
+./run_for_core_snps.sh
 
 micromamba deactivate
-module unload snippy
+module unload micromamba
